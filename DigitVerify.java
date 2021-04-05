@@ -1,4 +1,4 @@
-public class DigitVerify implements IVerifyCharacters, IError {
+public class DigitVerify implements IVerifyCharacters,IError  {
     String password;
 
     public DigitVerify(String password) {

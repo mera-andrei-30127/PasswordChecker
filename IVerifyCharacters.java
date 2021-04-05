@@ -1,4 +1,4 @@
-public interface IVerifyCharacters{
+public interface IVerifyCharacters {
     int verifyCharacters();
 
 }

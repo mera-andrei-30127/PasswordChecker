@@ -52,12 +52,17 @@ public class Validation {
             } else if (valuable.equals("verify group of characters") && contains.get(valuable) != 0) {
 
                 if (errrorr) {
+                    /*
+                    If all the requirements are checked, we must apply changes only at the characters groups.
+                     */
                     errorCount = errorCount + contains.get(valuable);
                     errrorr = false;
                 } else {
+                    /*
+                     If all the requirements aren't checked, we must replace wrong groups with missed characters.(where we can)
+                     */
                     errorCount = errorCount + contains.get(valuable) - 1;
                 }
-
                 verifyGroupOfCharacters.error();
             }
 
